@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer's Hub - Paris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Explorer's Hub</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#attractions">Attractions</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#tips">Local Tips</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Discover Paris</h1>
+                <p>Experience the magic of the City of Light</p>
+            </div>
+        </section>
+
+        <!-- Attractions Section -->
+        <section id="attractions" class="section">
+            <h2>Top Attractions</h2>
+            <div class="attractions-grid" id="attractionsGrid"></div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map" class="section">
+            <h2>Interactive Map</h2>
+            <div class="map-container">
+                <div id="map-placeholder">
+                    <h3>Popular Locations in Paris</h3>
+                    <ul class="locations-list" id="locationsList"></ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local Tips Section -->
+        <section id="tips" class="section">
+            <h2>Local Tips</h2>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <h3>Transportation</h3>
+                    <p>The Metro is the fastest way to travel. Get a Navigo pass for unlimited rides.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Dining</h3>
+                    <p>Avoid tourist traps. The best cafes are in Le Marais and Saint-Germain.</p>
+                </div>
+                <div class="tip-card">
+                    <h3>Culture</h3>
+                    <p>Learn basic French phrases. Museums are free on the first Sunday of each month.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explorer's Hub. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
